@@ -1,0 +1,110 @@
+/* CSS Corporate Styling Palette - S S Enterprises */
+:root {
+    --primary-color: #0d6efd;
+    --primary-light: rgba(13, 110, 253, 0.1);
+    --navy-color: #0a192f;
+    --dark-bg: #112240;
+    --text-muted-light: #a8b2d1;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    scroll-behavior: smooth;
+}
+
+.text-navy {
+    color: var(--navy-color);
+}
+
+.bg-primary-light {
+    background-color: var(--primary-light);
+}
+
+.text-light-muted {
+    color: var(--text-muted-light);
+}
+
+/* Custom Text Utilities */
+.tracking-wider {
+    letter-spacing: 1px;
+}
+
+/* Hero Elements styling */
+.hero-section {
+    min-height: 80vh;
+    padding: 80px 0;
+}
+
+.bg-shape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, var(--primary-light) 0%, transparent 70%);
+    top: -50px;
+    right: -50px;
+    z-index: 1;
+}
+
+/* Services and cards formatting */
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.transition-all {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Gallery Infrastructure Smooth Zoom Interaction */
+.card:hover .transition-transform {
+    transform: scale(1.06);
+}
+
+/* Floating Actions Buttons container styling */
+.floating-btn-group {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 60px; /* Constraints the container so it cannot stretch wide */
+}
+
+.floating-btn {
+    width: 55px !important;
+    height: 55px !important;
+    font-size: 1.4rem;
+    border: none;
+    border-radius: 50% !important; /* Locks them into clean circles */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    text-decoration: none;
+}
+
+.floating-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* Align and center icon glyphs inside the fixed button dimensions */
+.floating-btn i {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+#backToTop {
+    display: none; /* Controlled via script.js */
+}
+
+/* Footer alterations */
+.footer-links a:hover {
+    color: #ffffff !important;
+    padding-left: 5px;
+    transition: all 0.2s ease;
+}
