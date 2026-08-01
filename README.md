@@ -170,20 +170,6 @@ The website has been optimized for:
 
 ---
 
-## 📈 Future Improvements
-
-- Online Job Application Portal
-- Admin Dashboard
-- Candidate Login System
-- Employer Portal
-- Job Vacancy Listings
-- Resume Upload System
-- Blog Section
-- Multi-language Support
-- Email Notification System
-
----
-
 ## 👨‍💻 Developed By
 
 **Md Saeed Anwar**
@@ -191,6 +177,8 @@ The website has been optimized for:
 Computer Science Engineer | Full Stack Developer
 
 GitHub: https://github.com/saeed8271
+
+contact: +91-8271480524
 
 ---
 
