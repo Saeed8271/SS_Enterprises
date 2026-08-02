@@ -1,0 +1,58 @@
+/* portal.css — styles specific to the hidden staff management page.
+   Reuses colors/spacing conventions from style.css; only adds what's
+   unique to the portal layout so the two files never fight each other. */
+
+.portal-body {
+    background-color: #f4f6fa;
+    min-height: 100vh;
+}
+
+.portal-shell {
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.login-card {
+    max-width: 420px;
+    margin: 10vh auto 0;
+}
+
+.job-thumb {
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.job-row {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+#upload-preview {
+    max-height: 220px;
+    object-fit: contain;
+    display: none;
+}
+
+#upload-preview.show {
+    display: block;
+}
+
+.upload-dropzone {
+    border: 2px dashed rgba(13, 110, 253, 0.35);
+    background-color: rgba(13, 110, 253, 0.03);
+    cursor: pointer;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.upload-dropzone:hover,
+.upload-dropzone:focus-visible,
+.upload-dropzone.dragover {
+    border-color: #0d6efd;
+    background-color: rgba(13, 110, 253, 0.08);
+}
+
+.upload-dropzone:focus-visible {
+    outline: 2px solid #0d6efd;
+    outline-offset: 2px;
+}
